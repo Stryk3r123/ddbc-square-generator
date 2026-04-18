@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://UI/background.png" type="Texture" id=1]
 [ext_resource path="res://TeamFeatures/HeroSelect.cs" type="Script" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://TeamFeatures/Hero.cs" type="Script" id=4]
 [ext_resource path="res://TeamFeatures/TrinketSelect.cs" type="Script" id=5]
 [ext_resource path="res://TeamFeatures/SkillSelect.cs" type="Script" id=6]
+[ext_resource path="res://Themes/counter.tres" type="Theme" id=7]
+[ext_resource path="res://Themes/text.tres" type="Theme" id=8]
 
 [node name="Team" type="Sprite"]
 position = Vector2( 400, 300 )
@@ -250,3 +252,65 @@ margin_right = -208.0
 margin_bottom = 155.0
 mouse_filter = 1
 script = ExtResource( 5 )
+
+[node name="PointCounts" type="VBoxContainer" parent="."]
+margin_left = -392.0
+margin_top = 177.0
+margin_right = -256.0
+margin_bottom = 290.0
+
+[node name="Heroes" type="RichTextLabel" parent="PointCounts"]
+margin_right = 136.0
+margin_bottom = 35.0
+theme = ExtResource( 7 )
+bbcode_enabled = true
+bbcode_text = "Heroes: 12[img]res://Assets/menu/point_exceed.png"
+text = "Heroes: 12"
+fit_content_height = true
+scroll_active = false
+
+[node name="Skills" type="RichTextLabel" parent="PointCounts"]
+margin_top = 39.0
+margin_right = 136.0
+margin_bottom = 73.0
+theme = ExtResource( 7 )
+bbcode_enabled = true
+bbcode_text = "Heroes: 12"
+text = "Heroes: 12"
+fit_content_height = true
+scroll_active = false
+
+[node name="Trinkets" type="RichTextLabel" parent="PointCounts"]
+margin_top = 77.0
+margin_right = 136.0
+margin_bottom = 111.0
+theme = ExtResource( 7 )
+bbcode_enabled = true
+bbcode_text = "Heroes: 12"
+text = "Heroes: 12"
+fit_content_height = true
+scroll_active = false
+
+[node name="PointButton" type="Button" parent="."]
+margin_left = -242.0
+margin_top = 244.0
+margin_right = -24.0
+margin_bottom = 300.0
+theme = ExtResource( 8 )
+text = "Toggle Points"
+
+[node name="ScreenshotButton" type="Button" parent="."]
+margin_left = 60.0
+margin_top = 244.0
+margin_right = 240.0
+margin_bottom = 300.0
+theme = ExtResource( 8 )
+text = "Screenshot"
+
+[node name="ClearButton" type="Button" parent="."]
+margin_left = 309.0
+margin_top = 243.0
+margin_right = 393.0
+margin_bottom = 299.0
+theme = ExtResource( 8 )
+text = "Clear"

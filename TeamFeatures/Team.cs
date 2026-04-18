@@ -1,13 +1,16 @@
 ﻿using Godot;
 using System.Collections.Generic;
 using SquareGen.Globals;
-using System.Linq;
+using static SquareGen.Globals.Feature;
 
 namespace SquareGen.TeamFeatures
 {
     public partial class Team : Sprite
     {
         private List<Hero> Heroes = new List<Hero>();
+
+        private Dictionary<FeatureTypes, int> Points = new Dictionary<FeatureTypes, int>();
+        private Dictionary<FeatureTypes, int> MaxPoints = new Dictionary<FeatureTypes, int>();
 
         private static Team Instance = null;
 
@@ -29,6 +32,14 @@ namespace SquareGen.TeamFeatures
                     Heroes.Add(hero);
                 }
             }
+
+            Points.Add(FeatureTypes.Hero, 0);
+            Points.Add(FeatureTypes.Skill, 0);
+            Points.Add(FeatureTypes.Trinket, 0);
+
+            MaxPoints.Add(FeatureTypes.Hero, 12);
+            MaxPoints.Add(FeatureTypes.Skill, 40);
+            MaxPoints.Add(FeatureTypes.Trinket, 25);
         }
 
         private static List<Feature> GetHeroTypes()
@@ -134,6 +145,55 @@ namespace SquareGen.TeamFeatures
             }
 
             return true;
+        }
+
+        public static void RecalculatePoints()
+        {
+            if(Instance == null)
+            {
+                return;
+            }
+
+            Instance.Points[FeatureTypes.Hero] = 0;
+            Instance.Points[FeatureTypes.Skill] = 0;
+            Instance.Points[FeatureTypes.Trinket] = 0;
+
+            foreach (Feature hero in GetHeroTypes())
+            {
+                if(hero == null)
+                {
+                    continue;
+                }
+                Instance.Points[FeatureTypes.Hero] += hero.Points;
+            }
+            foreach (Feature skill in GetSkills())
+            {
+                if(skill == null)
+                {
+                    continue;
+                }
+                Instance.Points[FeatureTypes.Skill] += skill.Points;
+            }
+            foreach (Feature trinket in GetTrinkets())
+            {
+                if(trinket == null)
+                {
+                    continue;
+                }
+                Instance.Points[FeatureTypes.Trinket] += trinket.Points;
+            }
+        }
+
+        public static bool CanAfford(int points, FeatureTypes type)
+        {
+            //Check if the player has enough points to afford a feature with the given points and type.
+
+            if(Instance == null)
+            {
+                return true;
+            }
+
+            return Instance.MaxPoints[type] - Instance.Points[type] >= points;
         }
     }
 }

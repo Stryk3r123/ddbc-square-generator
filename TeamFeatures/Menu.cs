@@ -25,11 +25,17 @@ namespace SquareGen.TeamFeatures
         {
             ScrollContainer.RectPosition = new Vector2(origin.RectGlobalPosition.x + origin.RectSize.x, 0 - ScrollContainer.RectGlobalPosition.y + 50);
 
+            int oldPoints = 0;
+            if(origin.Feature != null)
+            {
+                oldPoints = origin.Feature.Points;
+            }
+
             foreach(Feature feature in features)
             {
                 MenuOption option = MenuOption.Scene.Instance<MenuOption>();
                 Container.AddChild(option);
-                option.Init(feature, FeatureTypes.Hero);
+                option.Init(feature, FeatureTypes.Hero, oldPoints);
 
                 option.Connect("OptionSelected", this, nameof(OnOptionSelected));
             }

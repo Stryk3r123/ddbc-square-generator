@@ -110,6 +110,8 @@ namespace SquareGen.TeamFeatures
                     SkillSelects[3].SetFeature(DataLoader.GetSkill("four", "abomination"), false);
                 }
             }
+
+            Team.RecalculatePoints();
         }
     }
 }

@@ -29,28 +29,23 @@ namespace SquareGen.TeamFeatures
             Connect("pressed", this, nameof(OnPressed));
         }
 
-        public void Init(Feature feature, FeatureTypes type)
+        public void Init(Feature feature, FeatureTypes type, int oldPoints)
         {
             //Call this before use, after MenuOption enters the scene.
 
             FeatureType = type;
             Feature = feature;
 
+            int pointChange = feature.Points - oldPoints;
             Icon.Texture = Feature.Icon;
-            PointLabel.BbcodeText = "[center]" + feature.Points;
-
-            //TODO properly check points exceeded
-            bool exceedsPoints = true;
-            switch (type)
+            PointLabel.BbcodeText = "[center]";
+            if(pointChange >= 0)
             {
-                case FeatureTypes.Hero:
-                    break;
-                case FeatureTypes.Trinket:
-                    break;
-                case FeatureTypes.Skill:
-                    break;
+                PointLabel.BbcodeText += "+";
             }
-            if (exceedsPoints)
+            PointLabel.BbcodeText += pointChange;
+
+            if (!Team.CanAfford(pointChange, type))
             {
                 PointLabel.BbcodeText += POINT_EXCEED_ICON;
             }
