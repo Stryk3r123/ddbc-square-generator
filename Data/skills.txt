@@ -1,4 +1,3 @@
-Name,Points,Hero,Text Name
 one,12,abomination,
 two,0,abomination,
 three,0,abomination,

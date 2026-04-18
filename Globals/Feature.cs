@@ -28,18 +28,17 @@ namespace SquareGen.Globals
             Hero = hero;
 
             string iconPath = ASSET_DIR;
-            if(type == FeatureTypes.Trinket)
+            if(type == FeatureTypes.Hero)
             {
-                iconPath += TRINKET_PREFIX;
+                iconPath += hero + "/" + name + HERO_SUFFIX;
+            }
+            else if(type == FeatureTypes.Trinket)
+            {
+                iconPath += "trinkets/" + TRINKET_PREFIX + name;
             }
             else if(type == FeatureTypes.Skill)
             {
-                iconPath += hero + "/" + SKILL_PREFIX;
-            }
-            iconPath += name;
-            if(type == FeatureTypes.Hero)
-            {
-                iconPath += HERO_SUFFIX;
+                iconPath += hero + "/" + hero + SKILL_PREFIX + name;
             }
             iconPath += ".png";
 

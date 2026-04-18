@@ -1,4 +1,3 @@
-Name,Points,Hero
 shattered_padlock,5,abomination
 spiked_chain,5,abomination
 wretch_cloak,6,abomination
@@ -14,13 +13,13 @@ medic_fullplate,5,arbalest
 stabilizing_tiller,6,arbalest
 weighted_bolas,2,arbalest
 bounty_notice,2,bounty_hunter
-grappling_mitts,4,bounty_hunter
+grappling_mits,4,bounty_hunter
 heartseeker,3,bounty_hunter
 infamous_visage,0,bounty_hunter
 writ_of_execution,4,crusader
 glorious_standard,4,crusader
 sacred_blade,7,crusader
-battle_scarred_helmet,3,crusader
+battle_scarred_helm,3,crusader
 confessor_gauntlet,2,flagellant
 crown_of_thorns,3,flagellant
 madman_collar,0,flagellant
@@ -32,7 +31,7 @@ leather_bandolier,4,grave_robber
 satchel_of_dirty_tricks,4,grave_robber
 razor_pin,1,hellion
 bone_vest,2,hellion
-savage_gauntlet,0,hellion
+savage_gauntlets,0,hellion
 executioner_halberd,2,hellion
 grim_bandana,3,highwayman
 parrying_dagger,4,highwayman
@@ -88,7 +87,7 @@ eagle_eye_talisman,3,generic
 eerie_eye,4,generic
 exotic_snuff,3,generic
 gladiator_helmet,3,generic
-hunter_charm,2,generic
+hunters_charm,2,generic
 jagged_chopper,2,generic
 monkey_paw,4,generic
 nepenthe,0,generic

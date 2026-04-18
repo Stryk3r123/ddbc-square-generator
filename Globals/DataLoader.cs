@@ -23,14 +23,18 @@ namespace SquareGen.Globals
 
         public override void _Ready()
         {
-            LoadFeatures(FeatureTypes.Hero, "heroes.csv");
-            LoadFeatures(FeatureTypes.Skill, "skills.csv");
-            LoadFeatures(FeatureTypes.Trinket, "trinkets.csv");
+            LoadFeatures(FeatureTypes.Hero, "heroes");
+            LoadFeatures(FeatureTypes.Skill, "skills");
+            LoadFeatures(FeatureTypes.Trinket, "trinkets");
         }
 
-        private void LoadFeatures(FeatureTypes type, string file)
+        private void LoadFeatures(FeatureTypes type, string fileName)
         {
-            string featureStrings = ResourceLoader.Load<string>(DATA_DIR + file);
+            File file = new File();
+            file.Open(DATA_DIR + fileName + ".txt", File.ModeFlags.Read);
+            string featureStrings = file.GetAsText();
+            file.Close();
+
             foreach(string featureString in featureStrings.Split('\n'))
             {
                 string[] featureParts = featureString.Split(',');
@@ -48,9 +52,59 @@ namespace SquareGen.Globals
                         list = Trinkets;
                         break;
                 }
-                
                 list.Add(new Feature(featureParts[0], Convert.ToInt32(featureParts[1]), featureParts[2], type));
             }
+        }
+
+        public static List<Feature> GetHeroes()
+        {
+            if(Instance != null)
+            {
+                List<Feature> list = new List<Feature>();
+                foreach(Feature feature in Instance.Heroes)
+                {
+                    list.Add(feature);
+                }
+                return list;
+            }
+
+            return null;
+        }
+
+        public static List<Feature> GetSkills(string hero)
+        {
+            if (Instance != null)
+            {
+                List<Feature> list = new List<Feature>();
+                foreach (Feature feature in Instance.Skills)
+                {
+                    if(feature.Hero == hero)
+                    {
+                        list.Add(feature);
+                    }
+                }
+                return list;
+            }
+
+            return null;
+        }
+
+        public static List<Feature> GetTrinkets(string hero)
+        {
+            if (Instance != null)
+            {
+                List<Feature> list = new List<Feature>();
+                foreach (Feature feature in Instance.Trinkets)
+                {
+                    if (feature.Hero == hero || feature.Hero == "generic")
+                    {
+                        list.Add(feature);
+                    }
+                }
+                return list;
+            }
+
+            return null;
         }
     }
 }

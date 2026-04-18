@@ -1,4 +1,3 @@
-Name,Points,Hero
 abomination,4,abomination
 antiquarian,3,antiquarian
 arbalest,6,arbalest
