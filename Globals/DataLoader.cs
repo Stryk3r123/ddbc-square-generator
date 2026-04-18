@@ -71,39 +71,54 @@ namespace SquareGen.Globals
             return null;
         }
 
-        public static List<Feature> GetSkills(string hero)
+        public static List<Feature> GetSkills(Feature hero)
         {
-            if (Instance != null)
+            List<Feature> list = new List<Feature>();
+            if (Instance != null && hero != null)
             {
-                List<Feature> list = new List<Feature>();
                 foreach (Feature feature in Instance.Skills)
                 {
-                    if(feature.Hero == hero)
+                    if(feature.Hero == hero.Hero)
                     {
                         list.Add(feature);
                     }
                 }
-                return list;
             }
 
-            return null;
+            return list;
         }
 
-        public static List<Feature> GetTrinkets(string hero)
+        public static List<Feature> GetTrinkets(Feature hero)
         {
-            if (Instance != null)
+            List<Feature> list = new List<Feature>();
+            if (Instance != null && hero != null)
             {
-                List<Feature> list = new List<Feature>();
                 foreach (Feature feature in Instance.Trinkets)
                 {
-                    if (feature.Hero == hero || feature.Hero == "generic")
+                    if (feature.Hero == hero.Hero || feature.Hero == "generic")
                     {
                         list.Add(feature);
                     }
                 }
-                return list;
             }
 
+            return list;
+        }
+
+        public static Feature GetSkill(string name, string hero)
+        {
+            if (Instance == null)
+            {
+                return null;
+            }
+
+            foreach (Feature feature in Instance.Skills)
+            {
+                if (feature.Name == name && feature.Hero == hero)
+                {
+                    return feature;
+                }
+            }
             return null;
         }
     }

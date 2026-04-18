@@ -14,7 +14,6 @@ RichTextLabel/fonts/normal_font = SubResource( 1 )
 [node name="MenuOption" type="TextureButton"]
 margin_right = 191.0
 margin_bottom = 84.0
-mouse_filter = 1
 script = ExtResource( 3 )
 
 [node name="Background" type="ColorRect" parent="."]

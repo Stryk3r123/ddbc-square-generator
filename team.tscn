@@ -1,13 +1,19 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://UI/background.png" type="Texture" id=1]
 [ext_resource path="res://TeamFeatures/HeroSelect.cs" type="Script" id=2]
+[ext_resource path="res://TeamFeatures/Team.cs" type="Script" id=3]
+[ext_resource path="res://TeamFeatures/Hero.cs" type="Script" id=4]
+[ext_resource path="res://TeamFeatures/TrinketSelect.cs" type="Script" id=5]
+[ext_resource path="res://TeamFeatures/SkillSelect.cs" type="Script" id=6]
 
 [node name="Team" type="Sprite"]
 position = Vector2( 400, 300 )
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="Hero1" type="Node2D" parent="."]
+script = ExtResource( 4 )
 
 [node name="HeroSelect" type="TextureButton" parent="Hero1"]
 margin_left = -329.0
@@ -16,3 +22,231 @@ margin_right = -244.0
 margin_bottom = -181.0
 mouse_filter = 1
 script = ExtResource( 2 )
+
+[node name="SkillSelect1" type="TextureButton" parent="Hero1"]
+margin_left = -365.0
+margin_top = -165.0
+margin_right = -293.0
+margin_bottom = -93.0
+mouse_filter = 1
+script = ExtResource( 6 )
+
+[node name="SkillSelect2" type="TextureButton" parent="Hero1"]
+margin_left = -280.0
+margin_top = -165.0
+margin_right = -208.0
+margin_bottom = -93.0
+mouse_filter = 1
+script = ExtResource( 6 )
+
+[node name="SkillSelect3" type="TextureButton" parent="Hero1"]
+margin_left = -365.0
+margin_top = -77.0
+margin_right = -293.0
+margin_bottom = -5.0
+mouse_filter = 1
+script = ExtResource( 6 )
+
+[node name="SkillSelect4" type="TextureButton" parent="Hero1"]
+margin_left = -280.0
+margin_top = -77.0
+margin_right = -208.0
+margin_bottom = -5.0
+mouse_filter = 1
+script = ExtResource( 6 )
+
+[node name="TrinketSelect1" type="TextureButton" parent="Hero1"]
+margin_left = -365.0
+margin_top = 11.0
+margin_right = -293.0
+margin_bottom = 155.0
+mouse_filter = 1
+script = ExtResource( 5 )
+
+[node name="TrinketSelect2" type="TextureButton" parent="Hero1"]
+margin_left = -280.0
+margin_top = 11.0
+margin_right = -208.0
+margin_bottom = 155.0
+mouse_filter = 1
+script = ExtResource( 5 )
+
+[node name="Hero2" type="Node2D" parent="."]
+position = Vector2( 191, 0 )
+script = ExtResource( 4 )
+
+[node name="HeroSelect" type="TextureButton" parent="Hero2"]
+margin_left = -329.0
+margin_top = -266.0
+margin_right = -244.0
+margin_bottom = -181.0
+mouse_filter = 1
+script = ExtResource( 2 )
+
+[node name="SkillSelect1" type="TextureButton" parent="Hero2"]
+margin_left = -365.0
+margin_top = -165.0
+margin_right = -293.0
+margin_bottom = -93.0
+mouse_filter = 1
+script = ExtResource( 6 )
+
+[node name="SkillSelect2" type="TextureButton" parent="Hero2"]
+margin_left = -280.0
+margin_top = -165.0
+margin_right = -208.0
+margin_bottom = -93.0
+mouse_filter = 1
+script = ExtResource( 6 )
+
+[node name="SkillSelect3" type="TextureButton" parent="Hero2"]
+margin_left = -365.0
+margin_top = -77.0
+margin_right = -293.0
+margin_bottom = -5.0
+mouse_filter = 1
+script = ExtResource( 6 )
+
+[node name="SkillSelect4" type="TextureButton" parent="Hero2"]
+margin_left = -280.0
+margin_top = -77.0
+margin_right = -208.0
+margin_bottom = -5.0
+mouse_filter = 1
+script = ExtResource( 6 )
+
+[node name="TrinketSelect1" type="TextureButton" parent="Hero2"]
+margin_left = -365.0
+margin_top = 11.0
+margin_right = -293.0
+margin_bottom = 155.0
+mouse_filter = 1
+script = ExtResource( 5 )
+
+[node name="TrinketSelect2" type="TextureButton" parent="Hero2"]
+margin_left = -280.0
+margin_top = 11.0
+margin_right = -208.0
+margin_bottom = 155.0
+mouse_filter = 1
+script = ExtResource( 5 )
+
+[node name="Hero3" type="Node2D" parent="."]
+position = Vector2( 382, 0 )
+script = ExtResource( 4 )
+
+[node name="HeroSelect" type="TextureButton" parent="Hero3"]
+margin_left = -329.0
+margin_top = -266.0
+margin_right = -244.0
+margin_bottom = -181.0
+mouse_filter = 1
+script = ExtResource( 2 )
+
+[node name="SkillSelect1" type="TextureButton" parent="Hero3"]
+margin_left = -365.0
+margin_top = -165.0
+margin_right = -293.0
+margin_bottom = -93.0
+mouse_filter = 1
+script = ExtResource( 6 )
+
+[node name="SkillSelect2" type="TextureButton" parent="Hero3"]
+margin_left = -280.0
+margin_top = -165.0
+margin_right = -208.0
+margin_bottom = -93.0
+mouse_filter = 1
+script = ExtResource( 6 )
+
+[node name="SkillSelect3" type="TextureButton" parent="Hero3"]
+margin_left = -365.0
+margin_top = -77.0
+margin_right = -293.0
+margin_bottom = -5.0
+mouse_filter = 1
+script = ExtResource( 6 )
+
+[node name="SkillSelect4" type="TextureButton" parent="Hero3"]
+margin_left = -280.0
+margin_top = -77.0
+margin_right = -208.0
+margin_bottom = -5.0
+mouse_filter = 1
+script = ExtResource( 6 )
+
+[node name="TrinketSelect1" type="TextureButton" parent="Hero3"]
+margin_left = -365.0
+margin_top = 11.0
+margin_right = -293.0
+margin_bottom = 155.0
+mouse_filter = 1
+script = ExtResource( 5 )
+
+[node name="TrinketSelect2" type="TextureButton" parent="Hero3"]
+margin_left = -280.0
+margin_top = 11.0
+margin_right = -208.0
+margin_bottom = 155.0
+mouse_filter = 1
+script = ExtResource( 5 )
+
+[node name="Hero4" type="Node2D" parent="."]
+position = Vector2( 573, 0 )
+script = ExtResource( 4 )
+
+[node name="HeroSelect" type="TextureButton" parent="Hero4"]
+margin_left = -329.0
+margin_top = -266.0
+margin_right = -244.0
+margin_bottom = -181.0
+mouse_filter = 1
+script = ExtResource( 2 )
+
+[node name="SkillSelect1" type="TextureButton" parent="Hero4"]
+margin_left = -365.0
+margin_top = -165.0
+margin_right = -293.0
+margin_bottom = -93.0
+mouse_filter = 1
+script = ExtResource( 6 )
+
+[node name="SkillSelect2" type="TextureButton" parent="Hero4"]
+margin_left = -280.0
+margin_top = -165.0
+margin_right = -208.0
+margin_bottom = -93.0
+mouse_filter = 1
+script = ExtResource( 6 )
+
+[node name="SkillSelect3" type="TextureButton" parent="Hero4"]
+margin_left = -365.0
+margin_top = -77.0
+margin_right = -293.0
+margin_bottom = -5.0
+mouse_filter = 1
+script = ExtResource( 6 )
+
+[node name="SkillSelect4" type="TextureButton" parent="Hero4"]
+margin_left = -280.0
+margin_top = -77.0
+margin_right = -208.0
+margin_bottom = -5.0
+mouse_filter = 1
+script = ExtResource( 6 )
+
+[node name="TrinketSelect1" type="TextureButton" parent="Hero4"]
+margin_left = -365.0
+margin_top = 11.0
+margin_right = -293.0
+margin_bottom = 155.0
+mouse_filter = 1
+script = ExtResource( 5 )
+
+[node name="TrinketSelect2" type="TextureButton" parent="Hero4"]
+margin_left = -280.0
+margin_top = 11.0
+margin_right = -208.0
+margin_bottom = 155.0
+mouse_filter = 1
+script = ExtResource( 5 )

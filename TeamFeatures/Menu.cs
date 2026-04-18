@@ -5,7 +5,7 @@ using static SquareGen.Globals.Feature;
 
 namespace SquareGen.TeamFeatures
 {
-    public partial class Menu : ScrollContainer
+    public partial class Menu : CanvasLayer
     {
         public static readonly PackedScene Scene = ResourceLoader.Load<PackedScene>("res://Menu.tscn");
 
@@ -13,17 +13,18 @@ namespace SquareGen.TeamFeatures
         public delegate void OptionSelected(Feature feature);
 
         private VBoxContainer Container = null;
+        private ScrollContainer ScrollContainer = null;
 
         public override void _Ready()
         {
-            Container = GetNode<VBoxContainer>("Container");
+            ScrollContainer = GetNode<ScrollContainer>("ScrollContainer");
+            Container = ScrollContainer.GetNode<VBoxContainer>("Container");
         }
 
-        public void Populate(float x)
+        public void Populate(List<Feature> features, float x)
         {
-            RectPosition = new Vector2(x, 0 - RectGlobalPosition.y + 50);
+            ScrollContainer.RectPosition = new Vector2(x, 0 - ScrollContainer.RectGlobalPosition.y + 50);
 
-            List<Feature> features = DataLoader.GetHeroes();
             foreach(Feature feature in features)
             {
                 MenuOption option = MenuOption.Scene.Instance<MenuOption>();
@@ -45,6 +46,7 @@ namespace SquareGen.TeamFeatures
         private void OnOptionSelected(Feature feature)
         {
             EmitSignal("OptionSelected", feature);
+            QueueFree();
         }
     }
 }
