@@ -36,7 +36,7 @@ namespace SquareGen.TeamFeatures
         {
             Menu menu = Menu.Scene.Instance<Menu>();
             AddChild(menu);
-            menu.Populate(GetValidFeatures(), RectGlobalPosition.x + RectSize.x);
+            menu.Populate(GetValidFeatures(), this);
             
             HasMenu = true;
             menu.Connect("tree_exited", this, nameof(ClearMenu));

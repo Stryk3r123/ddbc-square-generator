@@ -21,9 +21,9 @@ namespace SquareGen.TeamFeatures
             Container = ScrollContainer.GetNode<VBoxContainer>("Container");
         }
 
-        public void Populate(List<Feature> features, float x)
+        public void Populate(List<Feature> features, FeatureSelect origin)
         {
-            ScrollContainer.RectPosition = new Vector2(x, 0 - ScrollContainer.RectGlobalPosition.y + 50);
+            ScrollContainer.RectPosition = new Vector2(origin.RectGlobalPosition.x + origin.RectSize.x, 0 - ScrollContainer.RectGlobalPosition.y + 50);
 
             foreach(Feature feature in features)
             {
@@ -32,6 +32,18 @@ namespace SquareGen.TeamFeatures
                 option.Init(feature, FeatureTypes.Hero);
 
                 option.Connect("OptionSelected", this, nameof(OnOptionSelected));
+            }
+
+            CallDeferred(nameof(VerifyScreenPosition), origin);
+        }
+
+        private void VerifyScreenPosition(FeatureSelect origin)
+        {
+            //Check if the Menu goes off-screen.
+
+            if(ScrollContainer.RectGlobalPosition.x + ScrollContainer.RectSize.x >= GetViewport().GetVisibleRect().Size.x)
+            {
+                ScrollContainer.RectGlobalPosition = new Vector2(origin.RectGlobalPosition.x - ScrollContainer.RectSize.x, ScrollContainer.RectGlobalPosition.y);
             }
         }
 
