@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 
+using static SquareGen.Globals.Feature;
+
 namespace SquareGen.Globals
 {
     public partial class DataLoader : Node
@@ -21,18 +23,33 @@ namespace SquareGen.Globals
 
         public override void _Ready()
         {
-            LoadFeatures(Heroes, "heroes.csv");
-            LoadFeatures(Skills, "skills.csv");
-            LoadFeatures(Trinkets, "trinkets.csv");
+            LoadFeatures(FeatureTypes.Hero, "heroes.csv");
+            LoadFeatures(FeatureTypes.Skill, "skills.csv");
+            LoadFeatures(FeatureTypes.Trinket, "trinkets.csv");
         }
 
-        private void LoadFeatures(List<Feature> list, string file)
+        private void LoadFeatures(FeatureTypes type, string file)
         {
             string featureStrings = ResourceLoader.Load<string>(DATA_DIR + file);
             foreach(string featureString in featureStrings.Split('\n'))
             {
                 string[] featureParts = featureString.Split(',');
-                list.Add(new Feature(featureParts[0], Convert.ToInt32(featureParts[1]), featureParts[2]));
+
+                List<Feature> list = null;
+                switch (type)
+                {
+                    case FeatureTypes.Hero:
+                        list = Heroes;
+                        break;
+                    case FeatureTypes.Skill:
+                        list = Skills;
+                        break;
+                    default:
+                        list = Trinkets;
+                        break;
+                }
+                
+                list.Add(new Feature(featureParts[0], Convert.ToInt32(featureParts[1]), featureParts[2], type));
             }
         }
     }

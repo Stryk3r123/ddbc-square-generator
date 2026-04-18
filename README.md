@@ -4,3 +4,4 @@ This software is not an official Red Hook Studios product, and Red Hook Studios 
 
 skill prefix: <class>.ability.
 trinket prefix: inv_trinket+
+hero suffix: _portrait_roster
