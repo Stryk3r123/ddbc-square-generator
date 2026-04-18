@@ -13,6 +13,10 @@ config_version=4
 config/name="ddbc-square-generator"
 config/icon="res://icon.png"
 
+[autoload]
+
+DataLoader="*res://Globals/DataLoader.cs"
+
 [display]
 
 window/size/width=800
