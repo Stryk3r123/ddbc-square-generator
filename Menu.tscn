@@ -1,0 +1,7 @@
+[gd_scene format=2]
+
+[node name="Menu" type="ScrollContainer"]
+margin_right = 12.0
+margin_bottom = 12.0
+
+[node name="Options" type="VBoxContainer" parent="."]

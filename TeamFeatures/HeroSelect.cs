@@ -12,7 +12,7 @@ namespace SquareGen.TeamFeatures
         public override void _EnterTree()
         {
             base._EnterTree();
-            Connect("pressed", this, "OnPressed");
+            Connect("pressed", this, nameof(OnPressed));
         }
 
         public override void _Ready()
