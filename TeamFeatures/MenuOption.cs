@@ -17,7 +17,6 @@ namespace SquareGen.TeamFeatures
         private ColorRect Background = null;
 
         private Feature Feature;
-        private FeatureTypes FeatureType;
 
         public override void _Ready()
         {
@@ -33,7 +32,6 @@ namespace SquareGen.TeamFeatures
         {
             //Call this before use, after MenuOption enters the scene.
 
-            FeatureType = type;
             Feature = feature;
 
             int pointChange = feature.Points - oldPoints;

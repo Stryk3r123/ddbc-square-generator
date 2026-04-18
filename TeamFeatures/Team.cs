@@ -7,6 +7,9 @@ namespace SquareGen.TeamFeatures
 {
     public partial class Team : Sprite
     {
+        [Signal]
+        public delegate void PointsRecalculated();
+
         private List<Hero> Heroes = new List<Hero>();
 
         private Dictionary<FeatureTypes, int> Points = new Dictionary<FeatureTypes, int>();
@@ -16,11 +19,19 @@ namespace SquareGen.TeamFeatures
 
         public override void _EnterTree()
         {
-            if(Instance != null)
+            if(Instance != null && IsInstanceValid(Instance))
             {
                 Instance.QueueFree();
             }
             Instance = this;
+
+            Points.Add(FeatureTypes.Hero, 0);
+            Points.Add(FeatureTypes.Skill, 0);
+            Points.Add(FeatureTypes.Trinket, 0);
+
+            MaxPoints.Add(FeatureTypes.Hero, 12);
+            MaxPoints.Add(FeatureTypes.Skill, 40);
+            MaxPoints.Add(FeatureTypes.Trinket, 25);
         }
 
         public override void _Ready()
@@ -32,14 +43,6 @@ namespace SquareGen.TeamFeatures
                     Heroes.Add(hero);
                 }
             }
-
-            Points.Add(FeatureTypes.Hero, 0);
-            Points.Add(FeatureTypes.Skill, 0);
-            Points.Add(FeatureTypes.Trinket, 0);
-
-            MaxPoints.Add(FeatureTypes.Hero, 12);
-            MaxPoints.Add(FeatureTypes.Skill, 40);
-            MaxPoints.Add(FeatureTypes.Trinket, 25);
         }
 
         private static List<Feature> GetHeroTypes()
@@ -182,6 +185,8 @@ namespace SquareGen.TeamFeatures
                 }
                 Instance.Points[FeatureTypes.Trinket] += trinket.Points;
             }
+
+            Instance.EmitSignal("PointsRecalculated");
         }
 
         public static bool CanAfford(int points, FeatureTypes type)
@@ -194,6 +199,21 @@ namespace SquareGen.TeamFeatures
             }
 
             return Instance.MaxPoints[type] - Instance.Points[type] >= points;
+        }
+
+        public static void ConnectSignal(string signal, Object subscriber, string func)
+        {
+            Instance?.Connect(signal, subscriber, func);
+        }
+
+        public static Dictionary<FeatureTypes, int> GetPoints()
+        {
+            return Instance?.Points;
+        }
+
+        public static Dictionary<FeatureTypes, int> GetMaxPoints()
+        {
+            return Instance?.MaxPoints;
         }
     }
 }

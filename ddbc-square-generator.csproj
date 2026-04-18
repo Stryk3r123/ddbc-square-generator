@@ -3,7 +3,4 @@
     <TargetFramework>net472</TargetFramework>
     <RootNamespace>SquareGen</RootNamespace>
   </PropertyGroup>
-  <ItemGroup>
-    <Folder Include="TeamFeatures\" />
-  </ItemGroup>
 </Project>

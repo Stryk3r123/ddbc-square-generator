@@ -10,6 +10,9 @@ namespace SquareGen.Globals
             public const string TRACK_POINTS = "TrackPoints";
         }
 
+        [Signal]
+        public delegate void SettingUpdated(string setting);
+
         private Dictionary<string, bool> SettingValues = new Dictionary<string, bool>();
 
         private static Settings Instance = null;
@@ -21,7 +24,7 @@ namespace SquareGen.Globals
 
         public override void _Ready()
         {
-            SetSetting(Keys.TRACK_POINTS, true);
+            SetSetting(Keys.TRACK_POINTS, false);
         }
 
         public static bool GetSetting(string key)
@@ -52,6 +55,13 @@ namespace SquareGen.Globals
             {
                 Instance.SettingValues.Add(key, value);
             }
+
+            Instance.EmitSignal("SettingUpdated", key);
+        }
+
+        public static void ConnectSignal(string signal, Object subscriber, string func)
+        {
+            Instance?.Connect(signal, subscriber, func);
         }
     }
 }

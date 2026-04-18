@@ -10,7 +10,7 @@ namespace SquareGen.TeamFeatures
         [Signal]
         public delegate void FeatureSelected(FeatureSelect select);
 
-        protected abstract FeatureTypes FeatureType { get; }
+        public abstract FeatureTypes FeatureType { get; }
         public Feature Feature { get; protected set; } = null;
         public Hero Hero = null;
 

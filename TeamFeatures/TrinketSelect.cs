@@ -6,7 +6,7 @@ namespace SquareGen.TeamFeatures
 {
     public partial class TrinketSelect : FeatureSelect
     {
-        protected override FeatureTypes FeatureType { get; } = FeatureTypes.Hero;
+        public override FeatureTypes FeatureType { get; } = FeatureTypes.Trinket;
 
         protected override List<Feature> GetValidFeatures()
         {

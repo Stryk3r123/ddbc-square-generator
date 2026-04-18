@@ -27,15 +27,17 @@ texture = ExtResource( 1 )
 margin_left = 89.0
 margin_right = 189.0
 margin_bottom = 85.0
+mouse_filter = 1
 
 [node name="Points" type="RichTextLabel" parent="Container/PointContainer"]
 margin_top = 14.0
 margin_right = 100.0
 margin_bottom = 71.0
 rect_min_size = Vector2( 100, 0 )
+mouse_filter = 1
 theme = ExtResource( 2 )
 bbcode_enabled = true
 bbcode_text = "[center]12[img]res://Assets/menu/point_exceed.png"
-text = "[center]12[img]res://Assets/menu/point_exceed.png"
+text = "12"
 fit_content_height = true
 scroll_active = false

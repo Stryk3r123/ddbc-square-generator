@@ -35,7 +35,7 @@ namespace SquareGen.TeamFeatures
             {
                 MenuOption option = MenuOption.Scene.Instance<MenuOption>();
                 Container.AddChild(option);
-                option.Init(feature, FeatureTypes.Hero, oldPoints);
+                option.Init(feature, origin.FeatureType, oldPoints);
 
                 option.Connect("OptionSelected", this, nameof(OnOptionSelected));
             }
