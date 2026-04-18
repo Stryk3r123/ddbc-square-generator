@@ -9,8 +9,8 @@ namespace SquareGen.TeamFeatures
     {
         public static readonly PackedScene Scene = ResourceLoader.Load<PackedScene>("res://Menu.tscn");
 
-        //[Signal]
-        //public delegate void OptionSelectedEventHandler(Feature feature);
+        [Signal]
+        public delegate void OptionSelected(Feature feature);
 
         private VBoxContainer Container = null;
 
@@ -29,19 +29,22 @@ namespace SquareGen.TeamFeatures
                 MenuOption option = MenuOption.Scene.Instance<MenuOption>();
                 Container.AddChild(option);
                 option.Init(feature, FeatureTypes.Hero);
+
+                option.Connect("OptionSelected", this, nameof(OnOptionSelected));
             }
         }
 
         public override void _Input(InputEvent @event)
         {
-            if(@event is InputEventMouseButton click && !click.Pressed)
+            if(@event is InputEventMouseButton click && click.ButtonIndex == (int)ButtonList.Left && !click.Pressed)
             {
                 QueueFree();
             }
-            if(@event is InputEventScreenTouch touch && !touch.Pressed)
-            {
-                QueueFree();
-            }
+        }
+
+        private void OnOptionSelected(Feature feature)
+        {
+            EmitSignal("OptionSelected", feature);
         }
     }
 }

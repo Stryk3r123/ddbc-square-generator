@@ -14,15 +14,16 @@ RichTextLabel/fonts/normal_font = SubResource( 1 )
 [node name="MenuOption" type="TextureButton"]
 margin_right = 191.0
 margin_bottom = 84.0
+mouse_filter = 1
 script = ExtResource( 3 )
 
 [node name="Background" type="ColorRect" parent="."]
-margin_right = 192.0
+margin_right = 64.0
 margin_bottom = 85.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="Container" type="HBoxContainer" parent="."]
-margin_right = 189.0
+margin_right = 85.0
 margin_bottom = 85.0
 
 [node name="Icon" type="TextureRect" parent="Container"]

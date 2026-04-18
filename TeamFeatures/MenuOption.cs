@@ -8,8 +8,8 @@ namespace SquareGen.TeamFeatures
     {
         public static readonly PackedScene Scene = ResourceLoader.Load<PackedScene>("res://MenuOption.tscn");
 
-        //[Signal]
-        //public delegate void OptionSelectedEventHandler(Feature feature);
+        [Signal]
+        public delegate void OptionSelected(Feature feature);
 
         private HBoxContainer Container = null;
         private TextureRect Icon = null;
@@ -25,6 +25,8 @@ namespace SquareGen.TeamFeatures
             Icon = Container.GetNode<TextureRect>("Icon");
             PointLabel = Container.GetNode<RichTextLabel>("PointContainer/Points");
             Background = GetNode<ColorRect>("Background");
+
+            Connect("pressed", this, nameof(OnPressed));
         }
 
         public void Init(Feature feature, FeatureTypes type)
@@ -37,6 +39,7 @@ namespace SquareGen.TeamFeatures
             Icon.Texture = Feature.Icon;
             PointLabel.BbcodeText = "[center]" + feature.Points;
 
+            //TODO properly check points exceeded
             bool exceedsPoints = true;
             switch (type)
             {
@@ -52,8 +55,21 @@ namespace SquareGen.TeamFeatures
                 PointLabel.BbcodeText += POINT_EXCEED_ICON;
             }
 
+            //If point tracking is disabled, hide points and force update size
+            if (!Settings.GetSetting(Settings.Keys.TRACK_POINTS))
+            {
+                PointLabel.Hide();
+                Hide();
+                Show();
+            }
+
             RectMinSize = Container.RectSize;
             Background.RectMinSize = Container.RectSize;
+        }
+
+        private void OnPressed()
+        {
+            EmitSignal("OptionSelected", Feature);
         }
     }
 }

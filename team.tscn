@@ -14,4 +14,5 @@ margin_left = -329.0
 margin_top = -266.0
 margin_right = -244.0
 margin_bottom = -181.0
+mouse_filter = 1
 script = ExtResource( 2 )

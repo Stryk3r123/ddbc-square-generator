@@ -3,7 +3,6 @@
 [ext_resource path="res://TeamFeatures/Menu.cs" type="Script" id=1]
 
 [node name="Menu" type="ScrollContainer"]
-margin_right = 100.0
 margin_bottom = 500.0
 scroll_horizontal_enabled = false
 script = ExtResource( 1 )

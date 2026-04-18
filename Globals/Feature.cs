@@ -2,7 +2,7 @@
 
 namespace SquareGen.Globals
 {
-    public readonly struct Feature
+    public class Feature : Object
     {
         public enum FeatureTypes
         {

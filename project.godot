@@ -17,6 +17,7 @@ config/icon="res://icon.png"
 [autoload]
 
 DataLoader="*res://Globals/DataLoader.cs"
+Settings="*res://Globals/Settings.cs"
 
 [display]
 

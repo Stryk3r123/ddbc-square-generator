@@ -6,8 +6,7 @@ namespace SquareGen.TeamFeatures
 {
     public partial class HeroSelect : TextureButton
     {
-        private List<Feature> Heroes = new List<Feature>();
-        private int CurrentHero = -1;
+        private bool HasMenu = false;
 
         public override void _EnterTree()
         {
@@ -15,14 +14,12 @@ namespace SquareGen.TeamFeatures
             Connect("pressed", this, nameof(OnPressed));
         }
 
-        public override void _Ready()
-        {
-            Heroes = DataLoader.GetHeroes();
-        }
-
         private void OnPressed()
         {
-            CreateMenu();
+            if(!HasMenu)
+            {
+                CreateMenu();
+            }
         }
 
         private void CreateMenu()
@@ -30,6 +27,20 @@ namespace SquareGen.TeamFeatures
             Menu menu = Menu.Scene.Instance<Menu>();
             AddChild(menu);
             menu.Populate(RectSize.x);
+            
+            HasMenu = true;
+            menu.Connect("tree_exited", this, nameof(ClearMenu));
+            menu.Connect("OptionSelected", this, nameof(OnOptionSelected));
+        }
+
+        private void ClearMenu()
+        {
+            HasMenu = false;
+        }
+
+        private void OnOptionSelected(Feature feature)
+        {
+            TextureNormal = feature.Icon;
         }
     }
 }
