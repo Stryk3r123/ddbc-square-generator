@@ -10,6 +10,7 @@ namespace SquareGen.Globals
             Skill,
             Trinket
         }
+        public const string POINT_EXCEED_ICON = "[img]res://Assets/menu/point_exceed.png";
 
         private const string ASSET_DIR = "res://Assets/";
         private const string HERO_SUFFIX = "_portrait_roster";

@@ -22,12 +22,14 @@ namespace SquareGen.TeamFeatures
 
         private void OnPressed()
         {
-            CurrentHero++;
-            if(CurrentHero == Heroes.Count)
-            {
-                CurrentHero = 0;
-            }
-            TextureNormal = Heroes[CurrentHero].Icon;
+            CreateMenu();
+        }
+
+        private void CreateMenu()
+        {
+            Menu menu = Menu.Scene.Instance<Menu>();
+            AddChild(menu);
+            menu.Populate(RectSize.x);
         }
     }
 }
