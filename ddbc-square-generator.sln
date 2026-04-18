@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ddbc-square-generator", "ddbc-square-generator.csproj", "{161DA3F9-A109-425B-BECE-A39FD71FBC89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{161DA3F9-A109-425B-BECE-A39FD71FBC89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{161DA3F9-A109-425B-BECE-A39FD71FBC89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{161DA3F9-A109-425B-BECE-A39FD71FBC89}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{161DA3F9-A109-425B-BECE-A39FD71FBC89}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{161DA3F9-A109-425B-BECE-A39FD71FBC89}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{161DA3F9-A109-425B-BECE-A39FD71FBC89}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
