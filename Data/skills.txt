@@ -114,8 +114,8 @@ four,2,shieldbreaker,Impale
 five,2,shieldbreaker,Expose
 six,2,shieldbreaker,Captivate
 seven,4,shieldbreaker,Serpent Sway
-one,0,vestal,Mace Bash
-two,3,vestal,Judgement
+one,3,vestal,Judgement
+two,0,vestal,Mace Bash
 three,2,vestal,Dazzling Light
 four,3,vestal,Divine Grace
 five,4,vestal,Divince Comfort
