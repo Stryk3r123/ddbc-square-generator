@@ -40,8 +40,8 @@ seven,1,flagellant,Suffer
 one,0,grave_robber,Pick to the Face
 two,2,grave_robber,Lunge
 three,2,grave_robber,Flashing Daggers
-four,3,grave_robber,Shadow Fade
-five,1,grave_robber,Thrown Dagger
+four,2,grave_robber,Shadow Fade
+five,0,grave_robber,Thrown Dagger
 six,4,grave_robber,Panic Darts
 seven,2,grave_robber,Toxin Trickery
 one,0,hellion,Wicked Hack
@@ -60,30 +60,30 @@ six,3,highwayman,Duelist's Advance
 seven,1,highwayman,Open Vein
 one,1,houndmaster,Hound's Rush
 two,5,houndmaster,Hound's Harry
-three,1,houndmaster,Target Whistle
+three,0,houndmaster,Target Whistle
 four,1,houndmaster,Cry Havoc
 five,3,houndmaster,Guard Dog
 six,3,houndmaster,Lick Wounds
-seven,3,houndmaster,Blackjack
-one,2,jester,Dirk Stab
-two,3,jester,Harvest
+seven,2,houndmaster,Blackjack
+one,3,jester,Dirk Stab
+two,2,jester,Harvest
 three,5,jester,Finale
-four,2,jester,Solo
+four,1,jester,Solo
 five,0,jester,Mortal Wound
 six,3,jester,Battle Ballad
 seven,1,jester,Inspiring Tune
-one,0,leper,Chop
+one,1,leper,Chop
 two,2,leper,Hew
 three,3,leper,Purge
 four,2,leper,Revenge
 five,1,leper,Withstand
 six,1,leper,Solemnity
-seven,1,leper,Intimidate
-one,0,man_at_arms,Crush
+seven,0,leper,Intimidate
+one,1,man_at_arms,Crush
 two,1,man_at_arms,Rampart
-three,5,man_at_arms,Bellow
+three,6,man_at_arms,Bellow
 four,3,man_at_arms,Defender
-five,2,man_at_arms,Retribution
+five,3,man_at_arms,Retribution
 six,2,man_at_arms,Command
 seven,3,man_at_arms,Bolster
 one,3,musketeer,Aimed Shot
@@ -96,7 +96,7 @@ seven,3,musketeer,Ranging Shot
 one,0,occultist,Sacrifical Stab
 two,4,occultist,Abyssal Artillery
 three,3,occultist,Weakening Curse
-four,4,occultist,Wyrd Reconstruction
+four,3,occultist,Wyrd Reconstruction
 five,1,occultist,Vulnerability Hex
 six,2,occultist,Stygian Embrace
 seven,4,occultist,Daemon's Pull
@@ -109,14 +109,14 @@ six,2,plague_doctor,Emboldening Vapours
 seven,2,plague_doctor,Disorienting Blast
 one,1,shieldbreaker,Pierce
 two,4,shieldbreaker,Puncture
-three,1,shieldbreaker,Adder's Kiss
-four,2,shieldbreaker,Impale
+three,2,shieldbreaker,Adder's Kiss
+four,1,shieldbreaker,Impale
 five,2,shieldbreaker,Expose
 six,2,shieldbreaker,Captivate
 seven,4,shieldbreaker,Serpent Sway
-one,3,vestal,Judgement
+one,2,vestal,Judgement
 two,0,vestal,Mace Bash
-three,2,vestal,Dazzling Light
+three,3,vestal,Dazzling Light
 four,3,vestal,Divine Grace
 five,4,vestal,Divince Comfort
 six,1,vestal,Illumination
