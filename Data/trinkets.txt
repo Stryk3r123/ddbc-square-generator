@@ -14,7 +14,7 @@ stabilizing_tiller,6,arbalest
 weighted_bolas,1,arbalest
 bounty_notice,2,bounty_hunter
 grappling_mits,4,bounty_hunter
-heartseeker,3,bounty_hunter
+heartseeker,2,bounty_hunter
 infamous_visage,0,bounty_hunter
 writ_of_execution,4,crusader
 glorious_standard,4,crusader
@@ -63,7 +63,7 @@ fleshbound_grimoire,5,occultist
 calling_saltes,2,occultist
 hand_of_glory,4,occultist
 bleeding_skull,-2,occultist
-sacrificial_kris,3,occultist
+sacrificial_kris,2,occultist
 volatile_concoction,2,plague_doctor
 hazard_mask,2,plague_doctor
 acrid_vial,3,plague_doctor
@@ -99,5 +99,5 @@ rotting_trophy,2,generic
 sanity_bane,0,generic
 silver_syringe,2,generic
 spiked_bat,3,generic
-the_finisher,5,generic
+the_finisher,4,generic
 treated_bandage,1,generic

@@ -78,10 +78,10 @@ three,3,leper,Purge
 four,2,leper,Revenge
 five,1,leper,Withstand
 six,1,leper,Solemnity
-seven,0,leper,Intimidate
-one,1,man_at_arms,Crush
+seven,1,leper,Intimidate
+one,0,man_at_arms,Crush
 two,1,man_at_arms,Rampart
-three,6,man_at_arms,Bellow
+three,7,man_at_arms,Bellow
 four,3,man_at_arms,Defender
 five,3,man_at_arms,Retribution
 six,2,man_at_arms,Command

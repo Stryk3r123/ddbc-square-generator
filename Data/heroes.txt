@@ -1,7 +1,7 @@
 abomination,4,abomination
 antiquarian,3,antiquarian
 arbalest,6,arbalest
-bounty_hunter,2,bounty_hunter
+bounty_hunter,1,bounty_hunter
 crusader,6,crusader
 flagellant,5,flagellant
 grave_robber,2,grave_robber
