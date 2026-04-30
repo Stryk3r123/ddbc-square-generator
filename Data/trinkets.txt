@@ -9,7 +9,7 @@ ghoul_claw,0,antiquarian
 impossible_glyph,4,antiquarian
 materia_pestis,3,antiquarian
 piercing_quarrel,8,arbalest
-medic_fullplate,5,arbalest
+medic_fullplate,4,arbalest
 stabilizing_tiller,6,arbalest
 weighted_bolas,1,arbalest
 bounty_notice,2,bounty_hunter

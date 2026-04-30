@@ -10,7 +10,7 @@ five,4,antiquarian,Rejuvenating Vapours
 six,3,antiquarian,Invigorating Vapours
 seven,2,antiquarian,Protect Me
 one,3,arbalest,Sniper Shot
-two,1,arbalest,Suppressing Fire
+two,0,arbalest,Suppressing Fire
 three,0,arbalest,Sniper's Mark
 four,2,arbalest,Bola
 five,0,arbalest,Blindfire

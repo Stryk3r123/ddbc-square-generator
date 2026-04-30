@@ -2,7 +2,7 @@ abomination,4,abomination
 antiquarian,3,antiquarian
 arbalest,6,arbalest
 bounty_hunter,1,bounty_hunter
-crusader,6,crusader
+crusader,5,crusader
 flagellant,5,flagellant
 grave_robber,2,grave_robber
 hellion,0,hellion
@@ -11,7 +11,7 @@ houndmaster,4,houndmaster
 jester,4,jester
 leper,2,leper
 man_at_arms,5,man_at_arms
-musketeer,5,musketeer
+musketeer,4,musketeer
 occultist,3,occultist
 plague_doctor,1,plague_doctor
 shieldbreaker,3,shieldbreaker
