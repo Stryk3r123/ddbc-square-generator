@@ -8,27 +8,27 @@ three,2,antiquarian,Take Cover
 four,1,antiquarian,Flashpowder
 five,4,antiquarian,Rejuvenating Vapours
 six,3,antiquarian,Invigorating Vapours
-seven,2,antiquarian,Protect Me
-one,3,arbalest,Sniper Shot
+seven,1,antiquarian,Protect Me
+one,4,arbalest,Sniper Shot
 two,0,arbalest,Suppressing Fire
 three,0,arbalest,Sniper's Mark
-four,2,arbalest,Bola
+four,3,arbalest,Bola
 five,0,arbalest,Blindfire
 six,4,arbalest,Battlefield Bandage
-seven,4,arbalest,Illuminating Flare
+seven,5,arbalest,Illuminating Flare
 one,1,bounty_hunter,Collect Bounty
 two,1,bounty_hunter,Mark for Death
-three,3,bounty_hunter,Come Hither
+three,4,bounty_hunter,Come Hither
 four,2,bounty_hunter,Uppercut
 five,0,bounty_hunter,Flashbang
-six,4,bounty_hunter,Finish Him
+six,5,bounty_hunter,Finish Him
 seven,3,bounty_hunter,Caltrops
-one,0,crusader,Smite
-two,3,crusader,Zealous Accusation
+one,1,crusader,Smite
+two,4,crusader,Zealous Accusation
 three,4,crusader,Stunning Blow
 four,3,crusader,Bulwark of Light
 five,4,crusader,Rally to the Flame
-six,2,crusader,Holy Lance
+six,3,crusader,Holy Lance
 seven,2,crusader,Inspiring Cry
 one,2,flagellant,Punish
 two,4,flagellant,Rain of Sorrows
@@ -86,10 +86,10 @@ four,3,man_at_arms,Defender
 five,3,man_at_arms,Retribution
 six,2,man_at_arms,Command
 seven,3,man_at_arms,Bolster
-one,3,musketeer,Aimed Shot
+one,4,musketeer,Aimed Shot
 two,2,musketeer,Smokescreen
 three,0,musketeer,Call the Shot
-four,2,musketeer,Buckshot
+four,3,musketeer,Buckshot
 five,0,musketeer,Quickdraw
 six,3,musketeer,Patch Up
 seven,3,musketeer,Ranging Shot
@@ -104,7 +104,7 @@ one,1,plague_doctor,Noxious Blast
 two,2,plague_doctor,Plague Grenade
 three,3,plague_doctor,Blinding Gas
 four,0,plague_doctor,Incision
-five,3,plague_doctor,Battlefield Medicine
+five,2,plague_doctor,Battlefield Medicine
 six,2,plague_doctor,Emboldening Vapours
 seven,2,plague_doctor,Disorienting Blast
 one,1,shieldbreaker,Pierce
