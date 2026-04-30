@@ -11,7 +11,7 @@ six,3,antiquarian,Invigorating Vapours
 seven,1,antiquarian,Protect Me
 one,4,arbalest,Sniper Shot
 two,0,arbalest,Suppressing Fire
-three,0,arbalest,Sniper's Mark
+three,1,arbalest,Sniper's Mark
 four,3,arbalest,Bola
 five,0,arbalest,Blindfire
 six,4,arbalest,Battlefield Bandage
