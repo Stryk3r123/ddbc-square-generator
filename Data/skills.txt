@@ -45,19 +45,19 @@ five,0,grave_robber,Thrown Dagger
 six,4,grave_robber,Panic Darts
 seven,2,grave_robber,Toxin Trickery
 one,0,hellion,Wicked Hack
-two,1,hellion,Iron Swan
+two,0,hellion,Iron Swan
 three,2,hellion,Terrifying YAWP!
 four,0,hellion,If It Bleeds
-five,0,hellion,Breakthrough
+five,2,hellion,Breakthrough
 six,1,hellion,Adrenaline Rush
-seven,1,hellion,Bleed Out
+seven,2,hellion,Bleed Out
 one,2,highwayman,Wicked Slice
 two,0,highwayman,Pistol Shot
 three,1,highwayman,Point Blank Shot
 four,2,highwayman,Grapeshot Blast
 five,3,highwayman,Vendetta
 six,3,highwayman,Duelist's Advance
-seven,1,highwayman,Open Vein
+seven,2,highwayman,Open Vein
 one,1,houndmaster,Hound's Rush
 two,5,houndmaster,Hound's Harry
 three,0,houndmaster,Target Whistle
@@ -105,7 +105,7 @@ two,2,plague_doctor,Plague Grenade
 three,3,plague_doctor,Blinding Gas
 four,0,plague_doctor,Incision
 five,2,plague_doctor,Battlefield Medicine
-six,2,plague_doctor,Emboldening Vapours
+six,3,plague_doctor,Emboldening Vapours
 seven,2,plague_doctor,Disorienting Blast
 one,1,shieldbreaker,Pierce
 two,4,shieldbreaker,Puncture
@@ -115,9 +115,9 @@ five,2,shieldbreaker,Expose
 six,2,shieldbreaker,Captivate
 seven,4,shieldbreaker,Serpent Sway
 one,2,vestal,Judgement
-two,0,vestal,Mace Bash
-three,3,vestal,Dazzling Light
+two,1,vestal,Mace Bash
+three,5,vestal,Dazzling Light
 four,3,vestal,Divine Grace
-five,4,vestal,Divince Comfort
+five,5,vestal,Divince Comfort
 six,1,vestal,Illumination
 seven,1,vestal,Hand of Light

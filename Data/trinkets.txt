@@ -29,7 +29,7 @@ well_balanced_stiletto,2,grave_robber
 cloak_and_dagger,3,grave_robber
 leather_bandolier,4,grave_robber
 satchel_of_dirty_tricks,4,grave_robber
-razor_pin,1,hellion
+razor_pin,2,hellion
 bone_vest,2,hellion
 savage_gauntlets,0,hellion
 executioner_halberd,2,hellion
@@ -74,9 +74,9 @@ scaled_shoulder,2,shieldbreaker
 fang_talisman,3,shieldbreaker
 idol_of_purity,3,vestal
 gleaming_breastplate,3,vestal
-purgation_talisman,1,vestal
-tome_of_fury,5,vestal
-ankh_of_life,1,generic
+purgation_talisman,2,vestal
+tome_of_fury,7,vestal
+ankh_of_life,0,generic
 bloodstained_gambeson,0,generic
 brass_bugle,2,generic
 brass_knuckles,4,generic
@@ -90,7 +90,7 @@ gladiator_helmet,2,generic
 hunters_charm,2,generic
 jagged_chopper,2,generic
 monkey_paw,4,generic
-nepenthe,0,generic
+nepenthe,1,generic
 numbing_incense,4,generic
 pitfighter_helm,4,generic
 rancid_cure_all,3,generic
