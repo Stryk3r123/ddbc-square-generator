@@ -1,4 +1,4 @@
-one,12,abomination,
+one,14,abomination,
 two,0,abomination,
 three,0,abomination,
 four,0,abomination,
@@ -85,7 +85,7 @@ three,7,man_at_arms,Bellow
 four,3,man_at_arms,Defender
 five,3,man_at_arms,Retribution
 six,2,man_at_arms,Command
-seven,3,man_at_arms,Bolster
+seven,4,man_at_arms,Bolster
 one,4,musketeer,Aimed Shot
 two,2,musketeer,Smokescreen
 three,0,musketeer,Call the Shot
@@ -117,7 +117,7 @@ seven,4,shieldbreaker,Serpent Sway
 one,2,vestal,Judgement
 two,1,vestal,Mace Bash
 three,5,vestal,Dazzling Light
-four,3,vestal,Divine Grace
-five,5,vestal,Divince Comfort
+four,4,vestal,Divine Grace
+five,4,vestal,Divince Comfort
 six,1,vestal,Illumination
 seven,1,vestal,Hand of Light

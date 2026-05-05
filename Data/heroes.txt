@@ -15,4 +15,4 @@ musketeer,4,musketeer
 occultist,3,occultist
 plague_doctor,1,plague_doctor
 shieldbreaker,3,shieldbreaker
-vestal,3,vestal
+vestal,4,vestal
