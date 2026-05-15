@@ -9,7 +9,7 @@ four,1,antiquarian,Flashpowder
 five,4,antiquarian,Rejuvenating Vapours
 six,3,antiquarian,Invigorating Vapours
 seven,1,antiquarian,Protect Me
-one,4,arbalest,Sniper Shot
+one,5,arbalest,Sniper Shot
 two,0,arbalest,Suppressing Fire
 three,1,arbalest,Sniper's Mark
 four,3,arbalest,Bola
@@ -30,7 +30,7 @@ four,3,crusader,Bulwark of Light
 five,4,crusader,Rally to the Flame
 six,3,crusader,Holy Lance
 seven,2,crusader,Inspiring Cry
-one,2,flagellant,Punish
+one,3,flagellant,Punish
 two,4,flagellant,Rain of Sorrows
 three,5,flagellant,Exanguinate
 four,3,flagellant,Reclaim
@@ -45,11 +45,11 @@ five,0,grave_robber,Thrown Dagger
 six,4,grave_robber,Panic Darts
 seven,2,grave_robber,Toxin Trickery
 one,0,hellion,Wicked Hack
-two,0,hellion,Iron Swan
+two,-1,hellion,Iron Swan
 three,2,hellion,Terrifying YAWP!
 four,0,hellion,If It Bleeds
 five,2,hellion,Breakthrough
-six,1,hellion,Adrenaline Rush
+six,2,hellion,Adrenaline Rush
 seven,2,hellion,Bleed Out
 one,2,highwayman,Wicked Slice
 two,0,highwayman,Pistol Shot
@@ -66,9 +66,9 @@ five,3,houndmaster,Guard Dog
 six,3,houndmaster,Lick Wounds
 seven,2,houndmaster,Blackjack
 one,3,jester,Dirk Stab
-two,2,jester,Harvest
+two,3,jester,Harvest
 three,5,jester,Finale
-four,1,jester,Solo
+four,2,jester,Solo
 five,0,jester,Mortal Wound
 six,3,jester,Battle Ballad
 seven,1,jester,Inspiring Tune
@@ -81,12 +81,12 @@ six,1,leper,Solemnity
 seven,1,leper,Intimidate
 one,0,man_at_arms,Crush
 two,1,man_at_arms,Rampart
-three,7,man_at_arms,Bellow
+three,9,man_at_arms,Bellow
 four,3,man_at_arms,Defender
-five,3,man_at_arms,Retribution
-six,2,man_at_arms,Command
+five,2,man_at_arms,Retribution
+six,3,man_at_arms,Command
 seven,4,man_at_arms,Bolster
-one,4,musketeer,Aimed Shot
+one,5,musketeer,Aimed Shot
 two,2,musketeer,Smokescreen
 three,0,musketeer,Call the Shot
 four,3,musketeer,Buckshot
@@ -108,7 +108,7 @@ five,2,plague_doctor,Battlefield Medicine
 six,3,plague_doctor,Emboldening Vapours
 seven,2,plague_doctor,Disorienting Blast
 one,1,shieldbreaker,Pierce
-two,4,shieldbreaker,Puncture
+two,5,shieldbreaker,Puncture
 three,2,shieldbreaker,Adder's Kiss
 four,1,shieldbreaker,Impale
 five,2,shieldbreaker,Expose

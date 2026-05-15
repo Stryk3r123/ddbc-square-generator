@@ -6,10 +6,10 @@ clasp_of_the_beast,3,abomination
 black_diamond_mirror,5,antiquarian
 tears_of_the_lost,5,antiquarian
 ghoul_claw,0,antiquarian
-impossible_glyph,4,antiquarian
+impossible_glyph,2,antiquarian
 materia_pestis,3,antiquarian
 piercing_quarrel,8,arbalest
-medic_fullplate,4,arbalest
+medic_fullplate,5,arbalest
 stabilizing_tiller,6,arbalest
 weighted_bolas,1,arbalest
 bounty_notice,2,bounty_hunter
@@ -19,7 +19,7 @@ infamous_visage,0,bounty_hunter
 writ_of_execution,4,crusader
 glorious_standard,4,crusader
 sacred_blade,6,crusader
-battle_scarred_helm,3,crusader
+battle_scarred_helm,1,crusader
 confessor_gauntlet,2,flagellant
 crown_of_thorns,3,flagellant
 madman_collar,0,flagellant
@@ -39,7 +39,7 @@ powder_flask,2,highwayman
 sturdy_buckle,3,highwayman
 duelist_pistol,1,highwayman
 attack_whistle,3,houndmaster
-tattered_chewtoy,3,houndmaster
+tattered_chewtoy,2,houndmaster
 padded_armguard,4,houndmaster
 training_whistle,3,houndmaster
 reaper_shroud,3,jester
@@ -60,7 +60,7 @@ tincture_of_iodine,4,musketeer
 iron_sights,5,musketeer
 buckshot_cartridge,2,musketeer
 fleshbound_grimoire,5,occultist
-calling_saltes,2,occultist
+calling_saltes,1,occultist
 hand_of_glory,4,occultist
 bleeding_skull,-2,occultist
 sacrificial_kris,2,occultist
@@ -71,7 +71,7 @@ amputation_saw,1,plague_doctor
 graceful_anklet,5,shieldbreaker
 viper_spear_tip,2,shieldbreaker
 scaled_shoulder,2,shieldbreaker
-fang_talisman,3,shieldbreaker
+fang_talisman,2,shieldbreaker
 idol_of_purity,3,vestal
 gleaming_breastplate,3,vestal
 purgation_talisman,2,vestal
@@ -85,7 +85,7 @@ crimson_hook,4,generic
 crushed_hemlock,4,generic
 eagle_eye_talisman,3,generic
 eerie_eye,4,generic
-exotic_snuff,3,generic
+exotic_snuff,4,generic
 gladiator_helmet,1,generic
 hunters_charm,2,generic
 jagged_chopper,2,generic
